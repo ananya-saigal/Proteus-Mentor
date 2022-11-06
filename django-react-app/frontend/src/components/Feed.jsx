@@ -6,15 +6,16 @@ import Resources from './Resources'
 function Feed() {
   return (
     <div className='feed'>
+      <h1>Feed</h1>
         <div className='feedWrapper'>
-            <Share />
+            <Share/>
             <Resources/>
             <Resources/>
             <Resources/>
             <Resources/>
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default Feed

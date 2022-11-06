@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/my_subjects.css"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
-const Browse_Subjects = (props) => {
+const My_Subjects = (props) => {
 
     const slideLeft = () => {
         var slider = document.getElementById("slider");
@@ -35,4 +35,4 @@ const Browse_Subjects = (props) => {
   )
 }
 
-export default Browse_Subjects
+export default My_Subjects
