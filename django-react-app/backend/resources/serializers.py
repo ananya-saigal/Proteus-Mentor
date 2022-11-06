@@ -21,7 +21,7 @@ class ResourceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Resource
-        fields = ('pk', 'title', 'content_type', 'text_content', 'image_content', 'author_username', 'score', 'subject', 'date_created')
+        fields = ('pk', 'title', 'text_content', 'image_content', 'author_username', 'score', 'subject', 'date_created')
 
 class CommentSerializer(serializers.ModelSerializer):
 
