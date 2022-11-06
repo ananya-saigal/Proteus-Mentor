@@ -11,8 +11,7 @@ import './assets/4.png'
 import './assets/5.png'
 import './assets/6.jpeg'
 import Navbar from './components/Navbar';
-
-function App() {
+import React, { Component } from 'react';
 
   const sliderClick= (slider) =>{
     alert();
@@ -70,6 +69,4 @@ function App() {
     </Router>
     </>
   );
-}
-
 export default App;
