@@ -4,8 +4,8 @@ import tutor from '../assests/tutor.png'
 import my_tutor from '../assests/my_tutor.png'
 
 import '../styles/Browse_Tutors.css'
-const User_profile = () => {
-    <>
+const User_profile = () =>  {
+    return (<>
     <img src={user_logo}/>
     <dev>
         Mark Anandroid
@@ -21,7 +21,7 @@ const User_profile = () => {
     <dev>
         Sophia Bloom
     </dev>
-    <p>
+    <p className='hi'>
      I have always been a foodie, and have always had a soft corner for desserts.
      Having a sweet tooth doesn't mean that I have to be unhealthy, I make nutritious 
      desserts that are naturally sugar-free. I begin class by highlighting the natural sweetness and 
@@ -40,4 +40,15 @@ const User_profile = () => {
     the youth uses.
     </p>
     </>
+    )
+}
+
+
+
+export default function Browse_Tutors() {
+  return (
+    <div>
+      <User_profile />
+    </div>
+  )
 }
