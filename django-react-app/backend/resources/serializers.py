@@ -37,8 +37,8 @@ class GetAuthorPointsSerializer(serializers.ModelSerializer):
         fields = ('pk', 'username', 'subjects', 'total_points')
 
     def get_total_points(data, profile):
-        print(profile.username)
         try:
-            return Resource.objects.get(author_username=profile.username)
+            resources = Resource.objects.filter(author_username=profile.username)
+            return sum([resource.score for resource in resources])
         except ObjectDoesNotExist:
             return 0
