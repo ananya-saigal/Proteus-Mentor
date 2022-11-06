@@ -31,7 +31,7 @@ const User_profile = () => {
     </p>
     <img src={my_tutor}/>
     <dev>
-        Dev Chopra
+        Harry Rowling 
     </dev>
     <p>
     My parents have always struggled with the slangs and abbreviations we commonly use.
