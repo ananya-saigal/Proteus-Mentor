@@ -1,0 +1,53 @@
+.resource{
+    width: 100%;
+    height: 170px;
+    background-repeat: 10px;
+    margin: 30px 0;
+}
+
+.resourceWrapper{
+    padding: 10px;
+
+}
+
+.resourceTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resourceTopLeft{
+    display: flex;
+    align-items: center;
+}
+
+.resourceUsername{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.resourceDate{
+    font-size: 12px;
+}
+
+.resourceCenter{
+    margin: 20px 0;
+}
+
+.resourceBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resourceBottomLeft{
+    display: flex;
+    align-items: center;
+}
+
+.resourceCommentText{
+    cursor: pointer;
+    border-bottom: 1px dashed grey;
+    font-size: 15px;
+}
