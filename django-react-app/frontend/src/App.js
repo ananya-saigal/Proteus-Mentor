@@ -1,7 +1,7 @@
-import Browse_subjects from './pages/Browse_subjects';
-import Resources from './components/Resources';
 import Browse_Subjects from './components/Browse_Subjects';
 import Feed from './components/Feed'
+import Current_Tutors from './components/Current_Tutors'
+import Browse_Tutors from './components/Browse_Tutors'
 import My_Subjects from './components/My_Subjects';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './assets/1.jpeg'
@@ -63,7 +63,9 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Feed/>}/>
           <Route path="/My_Subjects" element={<My_Subjects/>}/>
-          <Route path="/Browse_Subjects" ele={<Browse_Subjects/>}/>
+          <Route path="/Browse_Subjects" element={<Browse_Subjects/>}/>
+          <Route path="/Current_Tutors" element={<Current_Tutors/>}/>
+          <Route path="/Browse_Tutors" element={<Browse_Tutors/>}/>
         </Routes>
     </Router>
     </>
