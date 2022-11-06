@@ -40,13 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'resources',
+    'users',
+
     'rest_framework',
     'rest_framework.authtoken',
-    'dj_rest_auth',
+
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
+    'dj_rest_auth',
     'dj_rest_auth.registration',
 ]
 
@@ -112,6 +116,31 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# stuff for simple jwt from tutorial
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
+    ],
+}
+
+REST_USE_JWT = True
+
+JWT_AUTH_COOKIE = 'my-app-auth'
+
+AUTHENTICATION_BACKENDS = [
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_EMAIL_REQUIRED = False
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
+ACCOUNT_CONFIRM_EMAIL_ON_GET = False
+
+LOGIN_URL = 'http://localhost:8000/users/login'
 
 
 # Internationalization
