@@ -6,19 +6,21 @@ import my_tutor from '../assests/my_tutor.png'
 import '../styles/Browse_Tutors.css'
 const User_profile = () =>  {
     return (<>
-    <img src={user_logo}/>
-    <dev>
-        Mark Anandroid
-    </dev>
-    <p>
+    <div className='img'>
+        <img src={user_logo} width ="100" height = "100"/>
+    </div>
+    <p className='pink'>Mark Anandroid </p>
+    <p className='pink'>
         I am an MChem Chemistry graduate from Oxford, 
         and a current graduate entry medical student. 
         I am friendly, and patient and I find it extremely 
         rewarding to help students achieve their potential and 
         inspire them to engage with and even enjoy learning!
     </p>
-    <img src={tutor}/>
-    <dev>
+    <div className='img'>
+    <img src={tutor} width ="100" height = "100"/>
+    </div>
+    <dev className='hi'>
         Sophia Bloom
     </dev>
     <p className='hi'>
@@ -29,11 +31,13 @@ const User_profile = () =>  {
      chocolate mousse. Next up, learn to craft sugar-free banana ice cream before 
      finishing with sensational vegan brownies.
     </p>
-    <img src={my_tutor}/>
-    <dev>
+    <div className='img'>
+    <img src={my_tutor} width ="140" height = "120" object-fit cover/>
+    </div>
+    <dev className='blue'>
         Harry Rowling 
     </dev>
-    <p>
+    <p className='blue'>
     My parents have always struggled with the slangs and abbreviations we commonly use.
     I am always teaching them and have come to realise that I am very patient and good
     at teaching the older generation. In my sessions, you will easily pick up on all the slangs
