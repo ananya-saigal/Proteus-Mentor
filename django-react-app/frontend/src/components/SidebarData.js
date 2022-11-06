@@ -23,19 +23,19 @@ export const SidebarData = [
     },
     {
     title: 'Current Tutors',
-    path: '/',
+    path: '/current_tutors',
     icon: <FaIcons.FaChalkboardTeacher />,
     cName: 'nav-text'
     },
     {
     title: 'Find Tutors',
-    path: '/',
+    path: '/browse_tutors',
     icon: <FaIcons.FaSearchLocation />,
     cName: 'nav-text'
     },
     {
     title: 'User',
-    path: '/',
+    path: '/user_profile',
     icon: <FaIcons.FaUserCircle />,
     cName: 'nav-text'
     }
