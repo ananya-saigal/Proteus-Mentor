@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Browse_Tutors from './Components/Browse_Tutors'
+import Browse_subjects from './pages/Browse_subjects';
+import Resources from './components/Resources';
+import Browse_Subjects from './components/Browse_Subjects';
+import My_feed from './pages/My_feed';
+import Feed from './components/Feed'
+import { Menu } from "@mui/icons-material";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Browse_Tutors/>
+    <div>
+      <Menu />
+      <Feed/>
     </div>
   );
 }
